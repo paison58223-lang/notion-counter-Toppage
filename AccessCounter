@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>やまちゃんのポートフォリオへ移動中...</title>
+
+  <!-- 自動リダイレクト設定（2秒後） -->
+  <meta http-equiv="refresh" content="2; url=https://www.notion.so/27b7383faf3c8069a3ddc86c41a93417">
+
+  <!-- アクセスカウント（安全なSVG読込） -->
+  <img src="https://counterapi.dev/api/notion?name=yamachan_portfolio&type=svg" alt="view counter" style="display:none;">
+  
+  <style>
+    body {
+      font-family: "Noto Sans JP", sans-serif;
+      text-align: center;
+      margin-top: 100px;
+      color: #333;
+    }
+    h2 {
+      font-size: 1.4em;
+      margin-bottom: 0.5em;
+    }
+    p {
+      font-size: 1em;
+    }
+    a {
+      color: #2e6fdb;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>🌸 やまちゃんのポートフォリオへ移動しています...</h2>
+  <p>数秒後に自動で開きます。<br>
+     もし自動で開かない場合は、
+     <a href="https://www.notion.so/27b7383faf3c8069a3ddc86c41a93417">こちらをクリック</a>してください。</p>
+</body>
+</html>
