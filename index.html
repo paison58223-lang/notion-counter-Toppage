@@ -1,40 +1,47 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <title>やまちゃんのポートフォリオへ移動中...</title>
-
-  <!-- 自動リダイレクト設定（2秒後） -->
-  <meta http-equiv="refresh" content="2; url=https://www.notion.so/27b7383faf3c8069a3ddc86c41a93417">
-
-  <!-- アクセスカウント（安全なSVG読込） -->
-  <img src="https://counterapi.dev/api/notion?name=yamachan_portfolio&type=svg" alt="view counter" style="display:none;">
-  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>やまちゃんのNotionへ移動中...</title>
   <style>
     body {
-      font-family: "Noto Sans JP", sans-serif;
+      font-family: "Segoe UI", sans-serif;
+      background-color: #fafafa;
       text-align: center;
-      margin-top: 100px;
-      color: #333;
+      padding-top: 80px;
     }
-    h2 {
-      font-size: 1.4em;
-      margin-bottom: 0.5em;
-    }
-    p {
-      font-size: 1em;
-    }
-    a {
-      color: #2e6fdb;
-      text-decoration: none;
+    .count {
+      font-size: 1.2em;
+      margin-top: 20px;
+      color: #444;
     }
   </style>
 </head>
-
 <body>
-  <h2>🌸 やまちゃんのポートフォリオへ移動しています...</h2>
-  <p>数秒後に自動で開きます。<br>
-     もし自動で開かない場合は、
-     <a href="https://www.notion.so/27b7383faf3c8069a3ddc86c41a93417">こちらをクリック</a>してください。</p>
+  <h1>🚀 Notionページへ移動しています...</h1>
+  <p>少々お待ちください。</p>
+  <div class="count" id="countText">アクセス数を取得中...</div>
+
+  <script>
+    // 👇 リダイレクト先のNotion URLを設定
+    const notionURL = "https://www.notion.so/27b7383faf3c8069a3ddc86c41a93417";
+    const key = "visitCount";
+
+    // 💾 ローカル保存（この端末だけで記録）
+    let count = localStorage.getItem(key);
+    if (!count) count = 0;
+    count++;
+    localStorage.setItem(key, count);
+
+    // 🖥 表示更新
+    document.getElementById("countText").textContent =
+      `この端末での訪問回数：${count}回`;
+
+    // ⏰ 数秒後にNotionへ移動
+    setTimeout(() => {
+      window.location.href = notionURL;
+    }, 2500);
+  </script>
 </body>
 </html>
